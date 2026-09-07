@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>666号小小农场</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="farm-page">
+    <audio id="bgMusic" preload="none" loop></audio>
+
+    <header class="farm-header" aria-label="农场顶部按钮">
+      <button class="top-button music-button" id="musicButton" type="button">背景音乐</button>
+      <button class="top-button about-button" id="aboutButton" type="button">关于农场</button>
+    </header>
+
+    <main class="farm-scene">
+      <div class="cloud cloud-one" aria-hidden="true"></div>
+      <div class="cloud cloud-two" aria-hidden="true"></div>
+      <div class="cloud cloud-three" aria-hidden="true"></div>
+      <div class="butterfly butterfly-one" aria-hidden="true">♡</div>
+      <div class="butterfly butterfly-two" aria-hidden="true">♡</div>
+
+      <section class="hero" aria-label="666号小小农场首页">
+        <div class="farmhouse" aria-hidden="true">
+          <div class="roof"></div>
+          <div class="house-body">
+            <span class="window window-left"></span>
+            <span class="window window-right"></span>
+            <span class="door"></span>
+          </div>
+        </div>
+
+        <div class="title-area">
+          <div class="wood-sign">
+            <span class="rope rope-left"></span>
+            <span class="rope rope-right"></span>
+            <h1 id="siteTitle"></h1>
+            <span class="sign-flower flower-left">✿</span>
+            <span class="sign-flower flower-right">✿</span>
+          </div>
+          <p class="ribbon" id="siteSubtitle"></p>
+          <p class="slogan" id="siteSlogan"></p>
+        </div>
+
+        <div class="mailbox" aria-hidden="true">
+          <span class="mailbox-box"></span>
+          <span class="mailbox-post"></span>
+        </div>
+
+        <div class="character-row" id="characterRow" aria-label="农场里的朋友"></div>
+      </section>
+
+      <section class="section-cards" id="sectionCards" aria-label="三个生日章节"></section>
+
+      <div class="flower-bed" aria-hidden="true">
+        <span>✿</span><span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-x" type="button" data-close-modal aria-label="关闭">×</button>
+      <div id="modalBody"></div>
+      <button class="back-button" type="button" data-close-modal>回到农场</button>
+    </section>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
