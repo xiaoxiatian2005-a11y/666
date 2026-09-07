@@ -41,7 +41,7 @@ const SITE_CONTENT = {
       message: "菜园里的每一朵小花，都在悄悄祝你生日快乐。"
     },
     {
-      name: "女孩",
+      name: "666",
       image: "assets/characters/girl.png",
       message: "十六岁的你，正在写下新的、亮晶晶的一章。"
     }
